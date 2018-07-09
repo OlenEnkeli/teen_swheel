@@ -54,6 +54,12 @@ class Person_model extends CI_Model
     $this->sex = $this->input->post('sex');
 
     $this->db->insert('person', $this);
+
+    $this->db->insert('percon_coord', array(
+      'longitude'=>'NULL',
+      'lattitude'=>'NULL',
+      'user_id'=>$this->login
+    ));
   }
 
   public function login()
