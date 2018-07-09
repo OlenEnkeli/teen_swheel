@@ -55,7 +55,7 @@ class Person_model extends CI_Model
 
     $this->db->insert('person', $this);
 
-    $this->db->insert('percon_coord', array(
+    $this->db->insert('person_coords', array(
       'longitude'=>'NULL',
       'lattitude'=>'NULL',
       'user_id'=>$this->login
